@@ -8,12 +8,14 @@
     <title>fun-fi-cient | Play your way to productivity</title>
     <meta name="description"
         content="Discover how to be more productive, the funficient way. Boost your business productivity with strategies and solutions to reduce organizational debt and eliminate wasteful practices.">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     
     <link rel="stylesheet" href="reset.css" media="screen" />
-    <link rel="stylesheet" href="styles.css" media="screen" />
+    <link rel="stylesheet" href="style.css" media="screen" />
+
+    <script src="script.js" defer></script>
 
     
   <script async src="https://tally.so/widgets/embed.js"></script>
@@ -41,10 +43,51 @@
 
 <body>
 
+    <!-- Header -->
+
+    <div id="header"></div>
+    <script>
+        fetch('__header.html')
+        .then(response => response.text()) 
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+    </script>
+    
+   <!-- Body -->
+
+<main>
+
+    <header></header>
+
+<h1>Heading 1: Tuam voluptas porro perferendis rem animi modi laborum, suscipit quae.</h1>
+
+<h2>Heading 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+
+<h3>Heading 3: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+
+<h4>Heading 4: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
 
 
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptas minima porro impedit non, error ad ex sap sit amet, consectetur adipisicing elit. Su sit amet, consectetur adipisicing elit. Su sit amet, consectetur adipisicing elit. Su sit amet, consectetur adipisicing elit. Su sit amet, consectetur adipisicing elit. Suiente corporis, ipsa, itaque quos. Doloribus, recusandae repellendus? Animi ex quibusdam ipsa consequatur.</p>
 
-  
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae deserunt eveniet numquam illum similique aliquam cumque mollitia autem aspernatur vero incidunt atque animi hic ullam, nostrum labore qui saepe facere!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptas minima porro impedit non, error ad ex sapiente corporis, ipsa, itaque quos. Doloribus, recusandae repellendus? Animi ex quibusdam ipsa consequatur.</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae deserunt eveniet numquam illum similique aliquam cumque mollitia autem aspernatur vero incidunt atque animi hic ullam, nostrum labore qui saepe facere!</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae deserunt eveniet numquam illum similique aliquam cumque mollitia autem aspernatur vero incidunt atque animi hic ullam, nostrum labore qui saepe facere!</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae deserunt eveniet numquam illum similique aliquam cumque mollitia autem aspernatur vero incidunt atque animi hic ullam, nostrum labore qui saepe facere!</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae deserunt eveniet numquam illum similique aliquam cumque mollitia autem aspernatur vero incidunt atque animi hic ullam, nostrum labore qui saepe facere!</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae deserunt eveniet numquam illum similique aliquam cumque mollitia autem aspernatur vero incidunt atque animi hic ullam, nostrum labore qui saepe facere!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptas minima porro impedit non, error ad ex sapiente corporis, ipsa, itaque quos. Doloribus, recusandae repellendus? Animi ex quibusdam ipsa consequatur.</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae deserunt eveniet numquam illum similique aliquam cumque mollitia autem aspernatur vero incidunt atque animi hic ullam, nostrum labore qui saepe facere!</p>
+
+</main>
 
 </body>
 

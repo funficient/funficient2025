@@ -1,9 +1,273 @@
-/* Root settings and reset */
+/* Root settings  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+:root {
+    --bright-tangerine: #ffd208;
+    --tangerine: #f5c325;
+  
+    --orange: #fc9745;
+    --grapefruit: #ff7348;
+    --strawberry: #fd5a5c;
+    --dragonfruit: #f2456f;
+  
+    --lightseagreen100: #e6f2f3;
+    --lightseagreen200:#cce4e6;
+    --lightseagreen: #6DB9C2;
+    --seagreen300:#80bcc1;
+    --seagreen400:#33949b;
+    --seagreen: #007982;
+    --seagreen700: #00555b;
+    --seagreen800: #003034;
+  
+    --tangerine-gradient: linear-gradient(90deg, #f5c325, #ffd208);
+    --orange-gradient: linear-gradient(90deg, #fc9745, #ff7348);
+    --teal-gradient: linear-gradient(90deg, #007982, #6DB9C2 );
+  
+    --white: #fff;
+    --lightGray100: #fcfcfc;
+    --lightgray300: #6c757d;
+    --darkGray: #5d5c5c;
+    --darkGray800: #333;
+    --darkGray900: #111;
+  
+    --bs-primary: #00555b;
+    --bs-secondary: #007982;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+  }
+
+body {
+  background-color: #5d5c5c;
+}
+
+/* Fonts */
+  
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.7rem;
+    line-height: 1.3em;
+    margin: 1em  0;
+  }
+  
+  h2 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3rem;
+    color: var(--darkGray800);
+    margin-bottom: 0.8em;
+  }
+  
+  h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: var(--darkGray800);
+    margin-bottom: 0.5rem;
+  }
+  
+  h4 {
+    color: var(--darkGray);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-weight: 300;
+    color:var(--darkGray900);
+    line-height: 1.3em;
+  }
+
+  p + p {
+    margin-top: 1.2rem;
+  }
+
+  li,
+  a,
+  button {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  input, button, select {
+    background: none;
+    border: none;
+    font: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  img {
+    height: auto;
+  }
+
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  /* Colors */
+
+  .bg-tangerine {
+    /* Tangerine is for creative tools and resources */
+    background-image: linear-gradient(90deg, #f5c325, #ffd208);
+  }
+  
+.bg-teal {
+  /* Teal is for coaching and professional consulting */
+    background-image: linear-gradient(90deg, #007982, #6DB9C2 );
+  }
+
+.bg-black {
+    background-color: #000;
+  }
+
+.bg-white {
+    color: white;
+}
+
+.dark {
+    color: var(--seagreen700);
+    font-weight: 600;
+}
+
+.light {
+    color: white;
+    font-weight: 600;
+}
+
+/* Containers */
+
+.grid-main-container {
+    display: grid;
+    padding: 2rem;
+}
+
+.grid-2-col-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.grid-3-col-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.grid-4-col-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.center-grid-container {
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-main-container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-items: center;
+    margin: auto;
+}
+
+.section {
+  margin-inline: 15px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding-inline: 24px;
+  max-width: max-content;
+  transition: all ease-in-out0.3s;
+}
 
 
 
+/* Header */
+
+.header {
+  position: relative;
+  padding-block: 25px;
 
 
+  z-index: 100;
+  transition: 0.5s;
+  overflow: hidden;
+}
 
-/* Fonts, colors and sizes */
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
 
+.header .wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+
+header svg {
+  max-height: 50px;
+  transition: 0.5s;
+  fill: white;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.button-toggle .span {
+  background-color: #000;
+  width: 30px;
+  height: 3px;
+  transition: 0.25s ease;
+}
+
+.button-toggle .span:not(:last-child) {
+  margin-block-end: 7px;
+}
+
+.button-toggle:active .span.two {
+  opacity: 0;
+}
+.button-toggle:active .span.one {
+  transform: translateY(10px) rotate(45deg);
+}
+.button-toggle:active .span.three {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.navigation {
+  background-color: #003034;
+  position: absolute;
+  top: calc(100% - 20px);
+  right: 0;
+  min-width: 180px;
+  padding: 15px 10px;
+}
