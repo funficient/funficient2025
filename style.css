@@ -146,8 +146,9 @@ h1 {
     color: white;
     font-weight: 600;
 }
-
+/* ---------- */
 /* Containers */
+/* ---------- */
 
 .grid-main-container {
     display: grid;
@@ -208,13 +209,19 @@ h1 {
 
 /* Header */
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .header {
-  display: flex;
+ display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background: var(--teal-gradient);
   color: var(--bs-light);
+  
   z-index: 100;
   transition: 0.5s;
 }
@@ -270,8 +277,7 @@ position: relative;
   display: none;
   font-size: 30px;
   cursor: pointer;
-  transition: transform 0.5s
-  margin-left: 1rem;
+  transition: transform 0.5s;
 }
 
 .menuToggle::before {
@@ -281,6 +287,7 @@ position: relative;
 
 header .dark li a {
   color: var(--seagreen800);
+  padding: 0 2rem;
 }
 
 header .navigation li a:hover {
@@ -292,10 +299,8 @@ header .navigation li a:hover {
 header.sticky {
   background: rgb(240, 240, 240); 
   fill: #003034;
-  opacity: 80%;
-  padding: 1em 5em;
+  opacity: 90%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  max-width: calc(100vw+75px);
 }
 
 header.sticky svg path {
@@ -408,7 +413,7 @@ header.sticky .nav-button:hover {
   }
 
   header.sticky .menuToggle {
-      filter: invert(1);
+      color: #003034;
   }
 
   header .navigation.active a {
