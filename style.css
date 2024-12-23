@@ -186,6 +186,15 @@ h1 {
     margin: auto;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 2400px;
+  padding: 1rem;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -224,6 +233,7 @@ header svg {
 header .navigation {
   position: relative;
   display: flex;
+  transition: transform 0.3s ease-in-out;
 }
 
 header .navigation li {
@@ -260,6 +270,13 @@ position: relative;
   display: none;
   font-size: 30px;
   cursor: pointer;
+  transition: transform 0.5s
+  margin-left: 1rem;
+}
+
+.menuToggle::before {
+  content: "\2630";
+  margin-left: 1rem;
 }
 
 header .dark li a {
@@ -344,13 +361,13 @@ header.sticky .nav-button:hover {
 
 @media (max-width: 1380px) {
 
-   header, header.sticky {
-      padding: 0.9em 2em;
-      }
+  .wrapper {
+    width: 100%;
+    }
 
   header .navigation {
       display: none;
-      }
+    }
 
   header .navigation.active {
       width: max-content;
@@ -367,6 +384,7 @@ header.sticky .nav-button:hover {
       color: #003034;
       padding: 2rem 2rem;
       border-top-left-radius: 1rem;
+      transition: content 0.3s ease;
   }
 
   header.sticky .navigation.active {
@@ -380,8 +398,13 @@ header.sticky .nav-button:hover {
       font-weight: 700;
   }
 
-  header.sticky .menuToggle.active {
-      filter: invert(0);
+  .menuToggle {
+    display: block;
+  }
+
+  .menuToggle.active::before {
+    content: "X";
+    font-size: 30px;
   }
 
   header.sticky .menuToggle {
@@ -397,8 +420,6 @@ header.sticky .nav-button:hover {
   header .navigation.active a:hover {
       color: var(--lightseagreen);
       background: none;
-  }
-  .menuToggle {display: block;
   }
 
   .navigation.active {
