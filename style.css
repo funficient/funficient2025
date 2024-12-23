@@ -187,13 +187,23 @@ h1 {
     margin: auto;
 }
 
-.wrapper {
+.nav-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   max-width: 2400px;
+
   padding: 1rem;
+}
+
+.body-wrapper {
+  display: grid;
+  gap: 10px;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 2400px;
+  padding: 2rem;
 }
 
 .button {
@@ -220,6 +230,7 @@ header {
   align-items: center;
   padding: 10px 20px;
   background: var(--teal-gradient);
+  box-shadow: 0px 3px 10px 3px #d4d4d4;
   color: var(--bs-light);
   
   z-index: 100;
@@ -366,7 +377,7 @@ header.sticky .nav-button:hover {
 
 @media (max-width: 1380px) {
 
-  .wrapper {
+  .nav-wrapper {
     width: 100%;
     }
 
